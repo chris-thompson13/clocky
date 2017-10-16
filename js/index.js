@@ -48,6 +48,9 @@ function logtime(){
        if (body.classList.contains('night')){
        body.classList.remove('night');
        body.classList.add('day');
+     } else {
+       body.classList.add('day');
+
      }
      }
 
