@@ -3,6 +3,7 @@ var hours = 0;
 var sec = 0;
 var mins = 0;
 var statement = ""
+var setName = ""
 var body = document.getElementById('bid');
 var buttons2 = document.getElementsByClassName('mins')
 console.log("test")
@@ -143,13 +144,15 @@ if (hours == 0 || hours == 12){
 }
 }
 
-
+var h1 = document.getElementById('timeOfDay')
+h1.textContent = statement
 
 }
 setTimeout(function(){
   logtime()
-  alert(statement);
   setInterval(logtime,100);
+
+
 
 
 }, 1000);
