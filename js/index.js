@@ -41,19 +41,39 @@ function logtime(){
      mins = time.getMinutes();
      sec = time.getSeconds();
 
-     if (hours > 18 || hours < 6){
-       body.classList.remove('day');
-       body.classList.add('night');
 
-     } else {
-       if (body.classList.contains('night')){
-       body.classList.remove('night');
-       body.classList.add('day');
-     } else {
-       body.classList.add('day');
 
-     }
-     }
+
+
+   if (sec > 15){
+     if (body.classList.contains('day')){
+
+     body.classList.remove('day')
+     body.classList.add('day2')
+     console.log("test3")
+
+   }
+}
+if (sec > 30){
+  if (body.classList.contains('day2')){
+
+  body.classList.remove('day2')
+  body.classList.add('day3')
+  console.log("test3")
+
+}
+}
+if (sec > 45){
+  if (body.classList.contains('day3')){
+
+  body.classList.remove('day3')
+  body.classList.add('night')
+  console.log("test3")
+
+}
+}
+
+
 
      if (hours <12) {
         statement = "good morning"

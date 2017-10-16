@@ -21,7 +21,17 @@ background-position: center center;
 
 }
 
-
+.day2{
+  background-image:    url("https://static.pexels.com/photos/99551/hot-air-balloon-valley-sky-99551.jpeg");
+  background-size:     cover;                      /* <------ */
+background-repeat:   no-repeat;
+background-position: center center;}
+.day3{
+  background-image:    url("https://static.pexels.com/photos/122990/pexels-photo-122990.jpeg");
+  background-size:     cover;                      /* <------ */
+background-repeat:   no-repeat;
+background-position: center center;}
+}
 
 
 .header{
@@ -35,19 +45,18 @@ h1{
   margin:auto;
   vertical-align: middle;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
   color:white;
   transform: translateY(100px);
 }
 .nav-header {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
   height: 200px;
-  position: fixed;
   width: 100%;
   vertical-align: middle;
 
   top: 0;
   left: 0;
-  z-index: 999;
 }
 
 .test{
@@ -131,6 +140,8 @@ h1{
   margin-bottom: 0;
   display: block;
   animation: drop2 2s ease;
+  z-index: 999999999;
+
   opacity:.75;
 
 
@@ -162,9 +173,13 @@ h1{
   grid-template-columns: 1fr, 1fr,1fr;
 
 }
+.button{
+  z-index: 99999999999;
+
+}
 .column{
   height:600px;
-  width:33%;
+  width:30%;
   display:inline-block;
 
   margin-top: 0px;
@@ -244,6 +259,8 @@ opacity:.75;
   margin-bottom: 0;
   display: inline-block;
   animation: drop 1s ease;
+  z-index: 999999999;
+
 
 }
 
@@ -263,6 +280,8 @@ opacity:.75;
   margin-bottom: 0;
   display: inline-block;
   animation: drop2 2s ease;
+  z-index: 999999999;
+
 
 }
 
