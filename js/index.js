@@ -129,7 +129,7 @@ fly3.classList.add('hr2');
  }
 }
 }
-if (hours == 0){
+if (hours == 0 || hours == 12){
    fly3 = buttons3[(0)]
    if (fly3 !== undefined){
    if (fly3.classList.contains('hr')){
@@ -137,6 +137,7 @@ if (hours == 0){
    fly3.classList.add('hr2');
    }
   }
+
 
 
 }
