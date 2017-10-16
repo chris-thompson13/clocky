@@ -105,7 +105,7 @@ background-color: white;
   margin-bottom: 0;
   display: block;
   opacity:1.0;
-  animation: drop2 20s ease;
+  animation: drop2 2s ease;
 
 
 }
@@ -129,7 +129,12 @@ background-color: white;
 }
 
 
+.htmlTest{
 
+  display:grid;
+  grid-template-columns: 1fr, 1fr,1fr;
+
+}
 .column{
   height:600px;
   width:33%;
@@ -171,6 +176,7 @@ background-color: white;
 
 }
 #seconds{
+  grid-column:3;
   width:100px;
   background-color: #c4ffff;
   display: inline-block;
@@ -179,17 +185,19 @@ background-color: white;
 }
 #minutes{
   width:100px;
+  grid-column:2;
+
 
   background-color: #e7c4ff;
   display: inline-block;
-
 }
 
 #hours{
+  grid-column:1;
+
   width:200px;
   background-color: #ffcbc4;
   display: inline-block;
-  margin:0 auto;
 
 
 }
@@ -228,7 +236,7 @@ background-color: white;
   background-color:#de72ff;
   margin-bottom: 0;
   display: inline-block;
-  animation: drop2 20s ease;
+  animation: drop2 2s ease;
 
 }
 
@@ -287,7 +295,7 @@ background-color: white;
 
 @keyframes drop2 {
   0% {
-    transform: translateY(-100%);
+    transform: translateY(-600px);
     -webkit-filter: blur(0px);
 
     /* Safari */

@@ -3,12 +3,35 @@ var hours = 0;
 var sec = 0;
 var mins = 0;
 var statement = ""
+var body = document.getElementById('bid');
+var buttons2 = document.getElementsByClassName('mins')
+console.log("test")
+var loop = 0
+
+
+for (i=0; i<mins.length; i++){
+  console.log("test")
+
+  if (59-i <= mins){
+    console.log(i)
+    var test2 = buttons2[(59-i)]
+    test2.classList.remove('hr');
+    test2.classList.add('hr2');
+
+  }
+}
 
 
 
+function updateHrs(){
+  if (loop < 59){
+    loop++
+  }
+  var test2 = buttons2[(59-mins)]
+  test2.classList.remove('hr');
+  test2.classList.add('hr2');
 
-
-
+}
 
 
 function logtime(){
@@ -18,13 +41,14 @@ function logtime(){
      sec = time.getSeconds();
 
      if (hours > 18 || hours < 6){
-       var body = document.getElementById('bid')
-       body.classList.remove('day')
-       body.classList.add('night')
+       body.classList.remove('day');
+       body.classList.add('night');
 
      } else {
-       newBody.classList.remove('night')
-       newBody.classList.add('day')
+       if (body.classList.contains('night')){
+       body.classList.remove('night');
+       body.classList.add('day');
+     }
      }
 
      if (hours <12) {
@@ -46,17 +70,21 @@ function logtime(){
     console.log(userTime);
 
 
+
+
   // add li to ul
 
  var buttons = document.getElementsByClassName('test');
-var head =document.getElementById('now')
-head.textContent = userTime
+
 if (sec !== 0){
   var fly = buttons[(59 -sec)];
+  if (fly !== undefined){
+  if (fly.classList.contains('test')){
     fly.classList.remove('test');
 
   fly.classList.add('mbtnVisible');
-
+}
+}
   if (sec == 59){
 
 
@@ -66,14 +94,17 @@ if (sec !== 0){
 
   }
 
-  var buttons2 = document.getElementsByClassName('mins')
+
 var fly2 = buttons2[(59-mins)]
 if (fly2 !== undefined){
+
 if (fly2.classList.contains('mins')){
+
 fly2.classList.remove('mins');
 fly2.classList.add('mbtnVisible2');
 }
 }
+
 
 var buttons3 = document.getElementsByClassName('hr')
 if (hours >= 12){
@@ -108,10 +139,13 @@ if (hours == 0){
 }
 }
 
+
+
 }
 setTimeout(function(){
   logtime()
   alert(statement);
-  setInterval(logtime,1000);
+  setInterval(logtime,100);
+
 
 }, 1000);
