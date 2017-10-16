@@ -1,0 +1,314 @@
+.tableTime{
+  width:100%;
+}
+
+body{
+
+background-color: white;
+}
+.night{
+  background-color: #132138;
+
+}
+
+.day{
+  background-color: white;
+
+}
+
+
+
+
+.header{
+  width:33%;
+  float:center;
+}
+
+.test{
+  width:29px;
+  border-radius: 20px;
+  visibility:visible;
+  height:29px;
+  color: white;
+  position:center;
+  margin: 0 auto;
+  border-color: #F44336;
+  background-color:#039BE5;
+  margin-bottom: 0;
+  display: inline-block;
+  opacity:0.00;
+
+}
+.mins{
+  width:29px;
+  border-radius: 20px;
+  visibility:visible;
+  height:29px;
+  color: white;
+  position:center;
+  margin: 0 auto;
+  border-color: #F44336;
+  background-color:#039BE5;
+  margin-bottom: 0;
+  display: inline-block;
+  opacity:0.0;
+
+}
+
+.hr{
+  width:48.5px;
+  border-radius: 50px;
+  visibility:visible;
+  height:48.5px;
+  color: white;
+  position:center;
+  margin: 0 auto;
+  border-color: white;
+  background-color:#039BE5;
+  margin-bottom: 0;
+  display: block;
+  opacity:0.0;
+
+}
+.img{
+  height:500px;
+  width:500px;
+
+}
+.message{
+  display: inline-block;
+  text-align: center;
+  color:grey;
+  width:40%;
+  height:100%;
+  top:0px;
+  background-color: black;
+}
+#h1{
+
+  text-align: center;
+}
+.time{
+  display: inline-block;
+  width:33%
+}
+.hr2{
+  width:48.5px;
+  border-radius: 50px;
+  visibility:visible;
+  height:48.5px;
+  color: white;
+  position:center;
+  margin: 0 auto;
+  border-color: white;
+  background-color:rgba(255, 148, 71, 1);
+  margin-bottom: 0;
+  display: block;
+  opacity:1.0;
+  animation: drop2 20s ease;
+
+
+}
+
+
+
+
+.div{
+  width:100%;
+}
+#testR{
+  width:50%;
+  height 100px;
+  background-color:grey;
+    display:inline-block;
+  margin-right: 0px;
+}
+#testL{
+  width:50%;
+    display:inline-block;
+}
+
+
+
+.column{
+  height:600px;
+  width:33%;
+  display:inline-block;
+
+  margin-top: 0px;
+}
+.columnM{
+  height:600px;
+  width:33%;
+  display:inline-block;
+  margin-bottom: 0px;
+}
+
+.button{
+}
+
+.lbtn{
+  width:50%;
+  height:8.3333%;
+  position:center;
+
+    border-radius: 10px;
+
+  margin: 0 auto;
+  display: block;
+  animation: drop 10s ease;
+
+}
+.inline2{
+  display: inline-block;
+  width:48%;
+
+}
+
+.inline1{
+    display: inline-block;
+  width:48%;
+
+}
+#seconds{
+  width:100px;
+  background-color: #c4ffff;
+  display: inline-block;
+
+
+}
+#minutes{
+  width:100px;
+
+  background-color: #e7c4ff;
+  display: inline-block;
+
+}
+
+#hours{
+  width:200px;
+  background-color: #ffcbc4;
+  display: inline-block;
+  margin:0 auto;
+
+
+}
+.mbtnVisible:hover{
+
+}
+.mbtnVisible{
+  transition: border .5s ease-in-out;
+
+  width:29px;
+  border-radius: 20px;
+  visibility:visible;
+  height:29px;
+  color: white;
+  position:center;
+  margin: 0 auto;
+  border-color: white;
+  background-color:#039BE5;
+  margin-bottom: 0;
+  display: inline-block;
+  animation: drop 1s ease;
+
+}
+
+.mbtnVisible2{
+  transition: border .5s ease-in-out;
+
+  width:29px;
+  border-radius: 20px;
+  visibility:visible;
+  height:29px;
+  color: white;
+  position:center;
+  margin: 0 auto;
+  border-color: white;
+  background-color:#de72ff;
+  margin-bottom: 0;
+  display: inline-block;
+  animation: drop2 20s ease;
+
+}
+
+
+
+
+.button{
+  display:none;
+  visibility:hidden;
+}
+
+.mbtn{
+  width:100%;
+  border-radius: 10px;
+  height:3;
+  position:center;
+  margin: 0 auto;
+
+
+}
+
+.body{
+  background-color: black;
+}
+
+/*animations*/
+@keyframes drop {
+  0% {
+    transform: translateY(-1000px);
+    -webkit-filter: blur(0px);
+    /* Safari */
+    filter: blur(0px);
+  }
+  50% {
+    margin: auto;
+    -webkit-filter: blur(1px);
+    /* Safari */
+    filter: blur(0px);
+    background-color: black;
+
+
+  }
+  100% {
+    transform:translateY(0px);
+    -webkit-filter: blur(0px);
+    /* Safari */
+    filter: blur(0px);
+    border-color: #F44336;
+
+    border-width: 1px;
+    height:29px;
+    width:29px;
+
+  }
+}
+
+@keyframes drop2 {
+  0% {
+    transform: translateY(-100%);
+    -webkit-filter: blur(0px);
+
+    /* Safari */
+    filter: blur(0px);
+  }
+  50% {
+    margin: auto;
+    -webkit-filter: blur(1px);
+    /* Safari */
+    filter: blur(0px);
+
+
+  }
+  100% {
+    transform:translateY(0px);
+    -webkit-filter: blur(0px);
+    /* Safari */
+    filter: blur(0px);
+    transform: rotate(360deg);
+
+
+
+  }
+}
